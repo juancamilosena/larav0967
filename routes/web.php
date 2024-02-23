@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CursoController;
+use App\Http\Controllers\TallerController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +19,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/curso/{dato1}/{dato2}',[CursoController::class,'hola'])->name('curso.show');
+//Route::get('/curso/{dato1}/{dato2}',[CursoController::class,'hola'])->name('curso.show');
+
+//Route::get('/curso',[CursoController::class,'create']);
+//Route::post('/curso',[CursoController::class,'store'])->name('curso.store');
+
+Route::get('/tallerprimo',[TallerController::class,'create']);
+Route::post('/tallerprimo/verificar',[TallerController::class,'esPrimo'])->name('taller.esPrimo');
