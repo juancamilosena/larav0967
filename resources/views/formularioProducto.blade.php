@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
-    <h1>formulario producto</h1>
+<body class="bg-dark" >
+    <h1 class="text-light" >formulario producto</h1>
     <form action="{{route('product.store')}}" method="POST" enctype="multipart/form-data">
 
         @csrf
