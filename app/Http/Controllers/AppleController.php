@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
+use App\Models\apple;
 use Illuminate\Http\Request;
 
 class AppleController extends Controller
@@ -18,10 +18,10 @@ class AppleController extends Controller
 
      public function AppleStore(Request $request){
 
-        $producto = new Product();
-        $producto->name=$request->name;
-        $producto->price=$request->price;
-        $producto->save();
-        return $producto;
+        $apple = new apple();
+        $apple->name=$request->name;
+        $apple->price=$request->price;
+        $apple->save();
+        return $apple;
      }
 }
